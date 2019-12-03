@@ -1,1 +1,1 @@
-# adaptive-quantization-method
+# adaptive-quantization-method-for-deep-bayesian-neural-network
