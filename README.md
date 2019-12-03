@@ -1,1 +1,1 @@
-# chang-su-ting-adaptive-quantization-method-for-deep-bayesian-neural-network
+# Adaptive Quantization Method for Deep Bayesian Neural Network
