@@ -1,12 +1,19 @@
 # Adaptive Quantization Method for Deep Bayesian Neural Network
 ## Adaptive quantization neural network
-Adaptive quantization neural network is a model that generalizes quantization models from binary to 'M'-ary. The representation values and quantization partitions are adaptively updated by end-to-end method. After the training, one might obtain an asymmetric quantizer which saves memory storage but conserves the classified accuracy.
+Quantizaiton on weight is part of model compression issue. 
+This paper proposes a $M-ary$ adaptive quantization method for deep Bayesian neural networks. 
+That is to use deterministic values to represent stochastic weights of the model. 
+To reduce the performance loss, the representation value that maximize the likelihood is chosen because it keeps the probabilistic property after quantization. 
+Besides, the quantization scheme is decided data-driven, which explores in larger parameter space than hand-crafted models. 
+This benefits the model to achieve better results in classification. 
+The adaptive quantization method can be generalized for $M$ levels, decided before training. 
+This method improve the quantization for Bayesian neural network, and can be applied on different network structure, making it possible to utilize complex models on mobile device. 
 ## File description
-"main_nonBayes.py" is the main file that runs adaptive quantization neural network.
+"train_densenet.py" is the main file that runs adaptive quantization method on deep Bayesian DenseNet with CIFAR10.
 
-"main_nonBayesbackup.py" is the main file that runs full precision model.
+"train_nonsymLeNet.py" is the main file that runs adaptive quantization method on deep LeNet with MNIST.
 
-"utils" contains quantizaiton models and vanilla models.
+"layers.py" is the module of Bayesian convolutional layer and fully connected layer.
 ## Setting
 * Hardware:
   * CPU: Intel Core i7-4930K @3.40 GHz
