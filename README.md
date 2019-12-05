@@ -11,6 +11,10 @@ This method improve the quantization for Bayesian neural network, and can be app
 ## Result
 After the training stage, the means of weights densely cluster at three locations in M=3 case. The histogram showes that the distribution over weights is "multiple spike-and-slab". Also, the locations of spikes are asymmetric about zero.
 ![image](https://github.com/susan0720/Su-Ting-Chang-Adaptive-Quantization-Method-for-Deep-Bayesian-Neural-Network/blob/master/densenet-M3.png)
+
+
+The quantized loss is the difference between quantized weights and full-precision weights, and it converges fastly.
+![image](https://github.com/susan0720/Su-Ting-Chang-Adaptive-Quantization-Method-for-Deep-Bayesian-Neural-Network/blob/master/quantizedloss.png)
 ## File description
 "train_densenet.py" is the main file that runs adaptive quantization method on deep Bayesian DenseNet with CIFAR10.
 
