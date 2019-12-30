@@ -14,7 +14,7 @@ After the training stage, the means of weights densely cluster at three location
 
 
 The quantized loss is the difference between quantized weights and full-precision weights, and it converges fastly.
-![image](https://github.com/susan0720/Su-Ting-Chang-Adaptive-Quantization-Method-for-Deep-Bayesian-Neural-Network/blob/master/quantizedloss.png)
+![image](https://github.com/susan0720/Su-Ting-Chang-Adaptive-Quantization-Method-for-Deep-Bayesian-Neural-Network/blob/master/comparison.png)
 ## File description
 "train_densenet.py" is the main file that runs adaptive quantization method on deep Bayesian DenseNet with CIFAR10.
 
